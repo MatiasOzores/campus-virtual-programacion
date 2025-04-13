@@ -1,0 +1,794 @@
+/* 🎨 Contenedor general de la unidad */
+.unidad-wrapper {
+  padding: 90px 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+.unidad-header {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.unidad-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.unidad-icon {
+  font-size: 2rem;
+}
+
+.unidad-title h1 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.unidad-progress {
+  margin: 1.5rem 0;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.btn-agregar-ejercicio {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar-ejercicio:hover {
+  background-color: var(--primary-hover);
+}
+
+.formulario-ejercicio {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-ejercicio h2 {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn-guardar {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--success-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-guardar:hover {
+  background-color: var(--success-hover);
+}
+
+.no-ejercicios {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  color: var(--text-secondary);
+}
+
+.ejercicios-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.ejercicio-card {
+  
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ejercicio-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.ejercicio-content {
+  margin-bottom: 15px;
+}
+
+.ejercicio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ejercicio-icon {
+  font-size: 1.5rem;
+}
+
+.ejercicio-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.ejercicio-preview {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.ejercicio-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.ejercicio-estado {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.ejercicio-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-ver,
+.btn-eliminar {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.btn-ver {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-ver:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-eliminar {
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+}
+
+.btn-eliminar:hover {
+  background-color: var(--danger-hover);
+}
+
+.btn-agregar {
+  background-color: var(--success-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-agregar:hover {
+  background-color: var(--success-hover);
+}
+
+.form-ejercicio {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.form-ejercicio input,
+.form-ejercicio textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+.form-ejercicio textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.btn-guardar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-guardar:hover {
+  background-color: var(--primary-hover);
+}
+
+.no-ejercicios {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-volver:hover {
+  background-color: var(--secondary-hover);
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .unidad-wrapper {
+  background-color: var(--dark-bg);
+}
+
+[data-theme="dark"] .unidad-header,
+[data-theme="dark"] .formulario-ejercicio,
+[data-theme="dark"] .no-ejercicios,
+[data-theme="dark"] .ejercicio-card {
+  background-color: var(--dark-card-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+  background-color: var(--dark-input-bg);
+  border-color: var(--dark-border-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .unidad-wrapper {
+    padding: 80px 1.5rem 1.5rem;
+  }
+
+  .ejercicios-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .ejercicio-card-footer {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .estado-badge {
+    justify-content: center;
+  }
+  
+  .ejercicio-actions {
+    justify-content: center;
+  }
+  
+  .toggle-completado-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  
+  .ver-ejercicio-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .unidad-wrapper {
+    padding: 70px 1rem 1rem;
+  }
+
+  .unidad-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .ejercicios-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.unidad-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 80px;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.unidad-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #334155;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  margin-right: 1.5rem;
+}
+
+.back-button:hover {
+  color: #0f172a;
+}
+
+.unidad-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.unidad-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: #334155;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e8f0;
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.no-ejercicios {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f1f5f9;
+  border-radius: 0.5rem;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+
+.no-ejercicios p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.ejercicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.ejercicio-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ejercicio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ejercicio-card.completado {
+  border-left: 4px solid #10b981;
+}
+
+.ejercicio-card-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ejercicio-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+  flex: 1;
+}
+
+.dificultad-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.dificultad-badge.fácil {
+  background-color: #4CAF50; /* Verde para fácil */
+}
+
+.dificultad-badge.media {
+  background-color: #FFC107; /* Amarillo para media */
+}
+
+.dificultad-badge.difícil {
+  background-color: #F44336; /* Rojo para difícil */
+}
+
+.ejercicio-card-body {
+  padding: 1.25rem;
+  flex: 1;
+}
+
+.ejercicio-descripcion {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.ejercicio-card-footer {
+  padding: 1.25rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+
+}
+
+.estado-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.estado-badge.completado {
+  color: #10b981;
+}
+
+.estado-badge.pendiente {
+  color: #6b7280;
+}
+
+.ejercicio-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggle-completado-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #6b7280;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-completado-btn:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.toggle-completado-btn.completado {
+  background-color: #10b981;
+  color: #ffffff;
+  border-color: #10b981;
+}
+
+.toggle-completado-btn.completado:hover {
+  background-color: #059669;
+}
+
+.ver-ejercicio-btn {
+  padding: 0.625rem 1.25rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ver-ejercicio-btn:hover {
+  background-color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .unidad-container {
+    padding: 1.5rem;
+    margin-top: 70px;
+  }
+  
+  .unidad-header {
+    padding: 1.25rem;
+  }
+  
+  .unidad-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .ejercicios-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .unidad-container {
+    padding: 1rem;
+    margin-top: 60px;
+  }
+  
+  .unidad-header {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .back-button {
+    margin-right: 0;
+  }
+  
+  .ejercicios-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ejercicio-card-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .dificultad-badge {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .unidad-container {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+  
+  .unidad-header {
+    background-color: #1f2937;
+    border-color: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .unidad-header h1 {
+    color: #f9fafb;
+  }
+  
+  .back-button {
+    color: #d1d5db;
+  }
+  
+  .back-button:hover {
+    color: #f9fafb;
+  }
+  
+  .unidad-loading {
+    color: #d1d5db;
+  }
+  
+  .loading-spinner {
+    border-color: #374151;
+    border-top-color: #60a5fa;
+  }
+  
+  .no-ejercicios {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #d1d5db;
+  }
+  
+  .ejercicio-card {
+    background-color: #1f2937;
+    border-color: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ejercicio-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ejercicio-card.completado {
+    border-left: 4px solid #059669;
+  }
+  
+  .ejercicio-card-header {
+    border-bottom-color: #374151;
+  }
+  
+  .ejercicio-card-title {
+    color: #f9fafb;
+  }
+  
+  .dificultad-badge.fácil {
+    background-color: #064e3b;
+    color: #a7f3d0;
+  }
+  
+  .dificultad-badge.media {
+    background-color: #713f12;
+    color: #fef08a;
+  }
+  
+  .dificultad-badge.difícil {
+    background-color: #7f1d1d;
+    color: #fecaca;
+  }
+  
+  .ejercicio-descripcion {
+    color: #e5e7eb;
+  }
+  
+  .ejercicio-card-footer {
+    border-top-color: #374151;
+  }
+  
+  .estado-badge.completado {
+    color: #059669;
+  }
+  
+  .estado-badge.pendiente {
+    color: #9ca3af;
+  }
+  
+  .toggle-completado-btn {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #9ca3af;
+  }
+  
+  .toggle-completado-btn:hover {
+    background-color: #374151;
+    border-color: #4b5563;
+  }
+  
+  .toggle-completado-btn.completado {
+    background-color: #059669;
+    border-color: #059669;
+  }
+  
+  .toggle-completado-btn.completado:hover {
+    background-color: #047857;
+  }
+  
+  .ver-ejercicio-btn {
+    background-color: #3b82f6;
+  }
+  
+  .ver-ejercicio-btn:hover {
+    background-color: #2563eb;
+  }
+}
+  

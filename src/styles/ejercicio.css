@@ -1,0 +1,121 @@
+.ejercicio-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #ffcc00;
+    text-align: center;
+  }
+  
+  .enunciado {
+    background: #2d2d2d;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .upload-section {
+    text-align: center;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .file-label {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .file-info {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  
+  .code-display {
+    background: #1e1e1e;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    white-space: pre;
+    word-wrap: break-word;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: 300px; /* 🔥 Limita la altura inicial */
+    border-left: 4px solid #ffcc00;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  /* Expansión cuando se activa */
+  .code-display.expanded {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  /* Botón para expandir/cerrar */
+  .toggle-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .toggle-btn:hover {
+    background: #e6b800;
+  }
+  
+  .completion-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .completion-label {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .completion-label input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
