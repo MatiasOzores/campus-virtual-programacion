@@ -221,13 +221,13 @@ const Home = () => {
               <div className="hero-cta">
                 <button 
                   className="btn-primary"
-                  onClick={() => navigate('/#/login')}
+                  onClick={() => navigate('/login')}
                 >
                   Iniciar Sesión
                 </button>
                 <button 
                   className="btn-secondary"
-                  onClick={() => navigate('/#/register')}
+                  onClick={() => navigate('/register')}
                 >
                   Registrarse
                 </button>
@@ -285,7 +285,7 @@ const Home = () => {
               <div className="landing-dark-button-container">
                 <button 
                   className="landing-dark-button"
-                  onClick={() => navigate('/#/login')}
+                  onClick={() => navigate('/login')}
                 >
                   Comenzar Ahora
                 </button>
@@ -298,8 +298,8 @@ const Home = () => {
               Necesitás iniciar sesión para acceder al contenido completo
             </p>
             <div className="landing-dark-footer-links">
-              <a href="/#/login">Iniciar Sesión</a>
-              <a href="/#/register">Registrarse</a>
+              <a href="/login">Iniciar Sesión</a>
+              <a href="/register">Registrarse</a>
             </div>
           </footer>
         </div>
