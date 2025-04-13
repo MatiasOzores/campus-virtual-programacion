@@ -77,14 +77,14 @@ const truncateTitle = (title, maxLength = 30) => {
 };
 
 const proximosPDFs = [
-  { id: 0, title: "Introducción a la Programación - PDF", unit: 1, type: "pdf", file: "/pdfs/unidad-1.pdf" },
-  { id: 1, title: "Fundamentos de la Programación: Tipos, Variables y Operadores", unit: 2, type: "pdf", file: "/pdfs/unidad-2.pdf" },
-  { id: 2, title: "Entrada/Salida, Control de Flujo y Manejo de Datos", unit: 3, type: "pdf", file: "/pdfs/unidad-3.pdf" },
-  { id: 3, title: "Métodos: Organización y Reutilización del Código", unit: 4, type: "pdf", file: "/pdfs/unidad-4.pdf" },
-  { id: 4, title: "Introducción a POO, composición, herencia, polimorfismo", unit: 5, type: "pdf", file: "/pdfs/unidad-5.pdf" },
-  { id: 5, title: "Programación Concurrente: Hilos y Aplicaciones Multihilo", unit: 6, type: "pdf", file: "/pdfs/unidad-6.pdf" },
-  { id: 6, title: "Multithreading: Ejecución Paralela y Eficiencia en la Programación", unit: 7, type: "pdf", file: "/pdfs/unidad-7.pdf" },
-  { id: 7, title: "Networking en Java: Comunicación entre Dispositivos", unit: 8, type: "pdf", file: "/pdfs/unidad-8.pdf" }
+  { id: 0, title: "Introducción a la Programación - PDF", unit: 1, type: "pdf", file: "https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-1.pdf" },
+  { id: 1, title: "Fundamentos de la Programación: Tipos, Variables y Operadores", unit: 2, type: "pdf", file: "https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-2.pdf" },
+  { id: 2, title: "Entrada/Salida, Control de Flujo y Manejo de Datos", unit: 3, type: "pdf", file: "https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-3.pdf" },
+  { id: 3, title: "Métodos: Organización y Reutilización del Código", unit: 4, type: "pdf", file: "https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-4.pdf" },
+  { id: 4, title: "Introducción a POO, composición, herencia, polimorfismo", unit: 5, type: "pdf", file: "https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-5.pdf" },
+  { id: 5, title: "Programación Concurrente: Hilos y Aplicaciones Multihilo", unit: 6, type: "pdf", file: "https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-6.pdf" },
+  { id: 6, title: "Multithreading: Ejecución Paralela y Eficiencia en la Programación", unit: 7, type: "pdf", file: "https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-7.pdf" },
+  { id: 7, title: "Networking en Java: Comunicación entre Dispositivos", unit: 8, type: "pdf", file: "https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-8.pdf" }
 ];
 
 const Home = () => {
