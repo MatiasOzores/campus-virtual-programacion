@@ -83,8 +83,8 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '1',
     viewed: false,
-    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/introduccion-programacion.pdf',
-    fileName: 'introduccion-programacion.pdf'
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-1.pdf',
+    fileName: 'unidad-1.pdf'
   },
   {
     id: 9,
