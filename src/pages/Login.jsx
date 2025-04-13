@@ -54,7 +54,7 @@ const Login = () => {
           <button type="submit" className="auth-button">Iniciar sesión</button>
         </form>
         <p className="auth-link">
-          ¿No tienes una cuenta? <Link to="/campus-virtual-programacion/register">Regístrate</Link>
+          ¿No tienes una cuenta? <Link to="/register">Regístrate</Link>
         </p>
       </div>
     </div>
