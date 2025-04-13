@@ -7,6 +7,11 @@ export default defineConfig({
   base: '/campus-virtual-programacion/',
   build: {
     outDir: 'dist',
-    sourcemap: false
+    sourcemap: false,
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    }
   }
 }) 
