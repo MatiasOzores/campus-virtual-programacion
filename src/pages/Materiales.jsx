@@ -125,7 +125,7 @@ const Materiales = () => {
       type: 'pdf',
       unit: '1',
       viewed: false,
-      file: '/pdfs/unidad-1.pdf',
+      file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-1.pdf',
       fileName: 'unidad-1.pdf'
     },
     {
@@ -135,7 +135,7 @@ const Materiales = () => {
       type: 'pdf',
       unit: '2',
       viewed: false,
-      file: '/pdfs/unidad-2.pdf',
+      file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-2.pdf',
       fileName: 'unidad-2.pdf'
     },
     {
@@ -145,7 +145,7 @@ const Materiales = () => {
       type: 'pdf',
       unit: '3',
       viewed: false,
-      file: '/pdfs/unidad-3.pdf',
+      file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-3.pdf',
       fileName: 'unidad-3.pdf'
     },
     {
@@ -155,7 +155,7 @@ const Materiales = () => {
       type: 'pdf',
       unit: '4',
       viewed: false,
-      file: '/pdfs/unidad-4.pdf',
+      file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-4.pdf',
       fileName: 'unidad-4.pdf'
     },
     {
@@ -165,7 +165,7 @@ const Materiales = () => {
       type: 'pdf',
       unit: '5',
       viewed: false,
-      file: '/pdfs/unidad-5.pdf',
+      file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-5.pdf',
       fileName: 'unidad-5.pdf'
     },
     {
@@ -175,7 +175,7 @@ const Materiales = () => {
       type: 'pdf',
       unit: '6',
       viewed: false,
-      file: '/pdfs/unidad-6.pdf',
+      file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-6.pdf',
       fileName: 'unidad-6.pdf'
     },
     {
@@ -185,7 +185,7 @@ const Materiales = () => {
       type: 'pdf',
       unit: '7',
       viewed: false,
-      file: '/pdfs/unidad-7.pdf',
+      file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-7.pdf',
       fileName: 'unidad-7.pdf'
     },
     {
@@ -195,7 +195,7 @@ const Materiales = () => {
       type: 'pdf',
       unit: '8',
       viewed: false,
-      file: '/pdfs/unidad-8.pdf',
+      file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-8.pdf',
       fileName: 'unidad-8.pdf'
     },
     {
