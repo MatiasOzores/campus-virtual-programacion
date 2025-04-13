@@ -298,8 +298,18 @@ const Home = () => {
               Necesitás iniciar sesión para acceder al contenido completo
             </p>
             <div className="landing-dark-footer-links">
-              <a href="/login">Iniciar Sesión</a>
-              <a href="/register">Registrarse</a>
+              <button 
+                className="footer-link"
+                onClick={() => navigate('/login')}
+              >
+                Iniciar Sesión
+              </button>
+              <button 
+                className="footer-link"
+                onClick={() => navigate('/register')}
+              >
+                Registrarse
+              </button>
             </div>
           </footer>
         </div>
