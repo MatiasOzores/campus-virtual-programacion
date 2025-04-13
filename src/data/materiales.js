@@ -83,7 +83,7 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '1',
     viewed: false,
-    file: '/campus-virtual-programacion/pdfs/introduccion-programacion.pdf',
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/introduccion-programacion.pdf',
     fileName: 'introduccion-programacion.pdf'
   },
   {
@@ -93,7 +93,7 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '2',
     viewed: false,
-    file: '/campus-virtual-programacion/pdfs/unidad-2.pdf',
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-2.pdf',
     fileName: 'unidad-2.pdf'
   },
   {
@@ -103,7 +103,7 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '3',
     viewed: false,
-    file: '/campus-virtual-programacion/pdfs/unidad-3.pdf',
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-3.pdf',
     fileName: 'unidad-3.pdf'
   },
   {
@@ -113,7 +113,7 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '4',
     viewed: false,
-    file: '/campus-virtual-programacion/pdfs/unidad-4.pdf',
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-4.pdf',
     fileName: 'unidad-4.pdf'
   },
   {
@@ -123,7 +123,7 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '5',
     viewed: false,
-    file: '/campus-virtual-programacion/pdfs/unidad-5.pdf',
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-5.pdf',
     fileName: 'unidad-5.pdf'
   },
   {
@@ -133,7 +133,7 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '6',
     viewed: false,
-    file: '/campus-virtual-programacion/pdfs/unidad-6.pdf',
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-6.pdf',
     fileName: 'unidad-6.pdf'
   },
   {
@@ -143,7 +143,7 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '7',
     viewed: false,
-    file: '/campus-virtual-programacion/pdfs/unidad-7.pdf',
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-7.pdf',
     fileName: 'unidad-7.pdf'
   },
   {
@@ -153,7 +153,7 @@ export const materialesEjemplo = [
     type: 'pdf',
     unit: '8',
     viewed: false,
-    file: '/campus-virtual-programacion/pdfs/unidad-8.pdf',
+    file: 'https://matiasozores.github.io/campus-virtual-programacion/pdfs/unidad-8.pdf',
     fileName: 'unidad-8.pdf'
   },
   {
