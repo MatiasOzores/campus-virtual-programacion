@@ -1234,22 +1234,23 @@ body.dark-mode .estado-badge.completada {
 .landing-dark-footer-links {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    margin-top: 1rem;
 }
 
-.landing-dark-footer-links a {
-    color: white;
-    text-decoration: none;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
+.footer-link {
+    background: none;
+    border: none;
+    color: #3498db;
+    font-size: 1rem;
+    cursor: pointer;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.1);
+    transition: color 0.3s ease;
+    text-decoration: none;
 }
 
-.landing-dark-footer-links a:hover {
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.2);
+.footer-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
 }
 
 @keyframes patternMove {
