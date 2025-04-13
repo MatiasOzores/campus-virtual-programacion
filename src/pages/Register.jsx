@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import './Auth.css';
 
@@ -69,7 +69,7 @@ const Register = () => {
           </button>
         </form>
         <div className="auth-link">
-          ¿Ya tienes una cuenta? <a href="/login">Inicia sesión</a>
+          ¿Ya tienes una cuenta? <Link to="/login">Inicia sesión</Link>
         </div>
       </div>
     </div>
